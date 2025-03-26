@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Full Screen */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0c1930;
+    color: #FFD700;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#home { background: linear-gradient(to bottom, #0c1930, #1e3b70); }
+#sertifikat { background: linear-gradient(to bottom, #ff7e5f, #feb47b); }
+#cv { background: linear-gradient(to bottom, #56CCF2, #2F80ED); }
+#contact { background: linear-gradient(to bottom, #6a11cb, #2575fc); }
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFD700;
+    margin-top: 20px;
+}
+
+/* Button */
+button, .btn {
+    background: #FFD700;
+    color: #0c1930;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background: #e6c200;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Modal Sertifikat - Bisa di-scroll */
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 60%;
+    max-height: 80vh; /* Maksimal tinggi modal */
+    overflow-y: auto; /* Tambahkan scroll jika konten lebih panjang */
+    text-align: center;
+}

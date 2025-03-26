@@ -23,7 +23,7 @@ html, body {
     color: #FFD700;
     padding: 15px 50px;
     position: fixed;
-    width: 100%;
+    width: 100;
     top: 0;
     z-index: 1000;
 }
